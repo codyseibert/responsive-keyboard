@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="./index.js"></script>
+  </head>
+
+  <body>
+    <div id="keyboard">
+    </div>
+
+    <script>
+      var keyboard = Keyboard({
+        selector: '#keyboard',
+        style: 'white'
+      });
+
+      console.log(keyboard.getKey('a'));
+      keyboard.getKey('a').style.backgroundColor = 'red'
+    </script>
+  </body>
+</html>
